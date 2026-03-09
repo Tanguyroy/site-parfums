@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Maison Élégance</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #0b0b0b;
+        color: #fff;
+        text-align: center;
+    }
+
+    header {
+        background-color: #111;
+        padding: 20px 0;
+    }
+
+    header h1 {
+        color: #f5c518;
+        margin: 0;
+    }
+
+    nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        color: #f5c518;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    h2 {
+        color: #f5c518;
+        margin-bottom: 40px;
+        font-size: 28px;
+    }
+
+    .parfum-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .parfum {
+        background-color: #1a1a1a;
+        border-radius: 15px;
+        width: 250px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(245,197,24,0.5);
+        transition: transform 0.3s;
+    }
+
+    .parfum:hover {
+        transform: scale(1.05);
+    }
+
+    .parfum img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .parfum p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f5c518;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #e6b800;
+    }
+
+    footer {
+        background-color: #111;
+        padding: 20px 0;
+        font-size: 14px;
+    }
+
+    input, textarea {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    button {
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: #f5c518;
+        border: none;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #e6b800;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Maison Élégance</h1>
+    <p>Parfums de luxe</p>
+    <nav>
+        <a href="#nos-parfums">Nos Parfums</a>
+        <a href="#collections">Collections</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="nos-parfums">
+    <h2>Nos Parfums</h2>
+    <div class="parfum-container">
+        <!-- Parfum Violette -->
+        <div class="parfum">
+            <img src="https://images.unsplash.com/photo-1589885872413-c9d7f9f2ec0c?auto=format&fit=crop&w=250&h=250&q=80" alt="Parfum Violette">
+            <p><strong>Violette Élégante</strong></p>
+            <p>Un parfum floral et délicat, inspiré de la violette, pour une touche féminine et raffinée.</p>
+            <a class="btn" href="#">Découvrir</a>
+        </div>
+
+        <!-- Parfum Boisé -->
+        <div class="parfum">
+            <img src="https://images.unsplash.com/photo-1615194942111-823b7b7202f6?auto=format&fit=crop&w=250&h=250&q=80" alt="Parfum Boisé">
+            <p><strong>Bois Mystique</strong></p>
+            <p>Chaleureux et sophistiqué, un parfum boisé pour l'homme moderne qui assume son caractère.</p>
+            <a class="btn" href="#">Découvrir</a>
+        </div>
+
+        <!-- Parfum Été Riviera -->
+        <div class="parfum">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=250&h=250&q=80" alt="Parfum Été Riviera">
+            <p><strong>Riviera Soleil</strong></p>
+            <p>Frais et solaire, évoquant les plages de la Méditerranée et les journées d'été sur la Riviera.</p>
+            <a class="btn" href="#">Découvrir</a>
+        </div>
+    </div>
+</section>
+
+<section id="collections">
+    <h2>Collections</h2>
+    <p>Découvrez nos collections : Femme, Homme, Éditions limitées, Coffrets cadeaux.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Envoyez-nous un message :</p>
+    <form>
+        <input type="text" placeholder="Nom" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <textarea placeholder="Message" rows="4" required></textarea><br>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Maison Élégance | Mentions légales | Politique de confidentialité</p>
+</footer>
+
+</body>
+</html>
